@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('fonts/SofiaSans-Italic.woff2') format('woff2'),
+        url('fonts/SofiaSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Allgemeine Stile */
+body {
+  }
+
+#protfolio img {
+    border-radius: 5%;
+}
+  
+#raw {
+    margin: 10 10 10 10;
+}
+
+
+
+  /* Stile für die Sucheingabe */
+  #search-input {
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* Stile für die Projekte */
+  .project {
+    cursor: pointer;
+  }
+  
+  .project-info {
+    padding: 10px;
+  }
+  
+  /* Stil für gefilterte Projekte */
+  .project[style="display: none;"] {
+    display: none;
+  }
