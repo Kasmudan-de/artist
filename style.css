@@ -8,14 +8,11 @@
 }
 
 /* Allgemeine Stile */
-body {
-  }
-
 #protfolio img {
     border-radius: 5%;
 }
-  
-#raw {
+
+#row {
     margin: 10 10 10 10;
 }
 
