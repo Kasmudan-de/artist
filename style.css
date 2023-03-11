@@ -24,6 +24,14 @@ body {
   /* Stile für die Sucheingabe */
   #search-input {
     margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  #search-button {
+    width: 10%;
+    height: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .form-group {
@@ -45,4 +53,20 @@ body {
   /* Stil für gefilterte Projekte */
   .project[style="display: none;"] {
     display: none;
+  }
+
+  #footer {
+  }
+
+  #footer-div {
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #161616;
+    -webkit-box-shadow: 0px 0px 15px 5px #00000079; 
+    box-shadow: 0px 0px 15px 5px #00000079;
+    color: #ffffffad;
+    text-align: right;
+    padding: 10px 10px 10px 10px;
   }

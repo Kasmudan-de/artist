@@ -2,28 +2,26 @@
 <html>
   <head>
     <title>Portfolio Galerie</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="src/boostrap-5.min.css">
+    <script src="src/jquery-3.5.1.min.js"></script>
+    <script src="src/bootstrap-5.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container" id="protfolio">
-      <div class="row">
-        <div class="col-12">
-          <div class="form-group">
-            <input type="text" id="search-input" class="form-control" placeholder="Suchen nach den Artist ...">
-          </div>
-        </div>
-      </div>
-      <div class="row">
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Name des Artist ..." aria-label="Search" id="search-input">
+        <button class="btn btn-outline-success" type="button" id="search-button">Suche</button>
+      </form>
 
+      <div class="row" id="search-results">
+  
         <div class="col-md-4">
-          <div class="card-columns" >
+          <div class="card-columns" data-sort="Mina">
             <div class="card project" data-toggle="modal" data-target="#projectModal" data-sort="1" data-info="1">
               <img src="picture/mina.jpg" class="card-img-top" alt="Mina">
               <div class="card-body project-info">
-                <h4 data-sort="Mina">Mina</h4>
+                <h4>Mina</h4>
                 <div>
                  <p>Ich hoff ich mach das jetzt alles richtig und wage jetzt den Anfang 🙂<br /><br /> 
 
@@ -35,7 +33,7 @@
                   Ich weiß ich zeichne aktuell noch ziemlich detailarm, aber ich übe regelmäßig und hoffe schnell besser zu werden 😄 Ich hab noch viiiiieeeel zu lernen.<br />
                   <br />
                   Hier noch meine Links:<br />
-                  Website: https://www.minaarts.de/<br />
+                  Website: <a herf="https://www.minaarts.de/">https://www.minaarts.de/</a><br />
                   Twitch: https://twitch.tv/minarella__<br />
                   Instagram: https://www.instagram.com/arts_mina/<br />
                   Twitter: https://twitter.com/arts_mina<br />
@@ -49,11 +47,11 @@
         </div>
 
 
-        <div class="col-md-4">
-          <div class="card project" data-sort="2">
-            <img src="picture/Sabriwchu.png" class="card-img-top" alt="Sabriwchu">
+        <div class="col-md-4" >
+          <div class="card project" data-sort="Sabriwchu">
+            <img src="picture/Sabriwchu.png" class="card-img-top">
             <div class="card-body project-info">
-              <h4 data-sort="Sabriwchu">Sabriwchu</h4>
+              <h4>Sabriwchu</h4>
               <p>Sabri auch, Sabri auch! ( ͡° ͜ʖ ͡°)<br />
                 <br />
                 Hey, ich bin Sabri auch genannt als Sabriwchu bzw. Sabrina. Meine pure Leidenschaft ist es zu zeichnen, abgesehen davon zocke ich und gucke auch gerne Animes. Meisten zeichne ich digital, traditionell ab und zu auch, aber ich bevorzuge digital eher. Ich zeichne hauptsächlich Anime, Kreaturen bzw. Drachen/Tiere. <br />
@@ -72,10 +70,10 @@
         
         
         <div class="col-md-4">
-          <div class="card project" data-sort="3">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
+          <div class="card project" data-sort="Chikun">
+            <img src="picture/chikun_pic.png" class="card-img-top">
             <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
+              <h4>Chikun</h4>
               <p>Moino, ich bin Chikun und mache Fandubs, um im Sprechen besser zu werden, weil... Synchronsprecher wäre schon n geiler Job.<br />
                 <br />
                 Und in meiner Freizeit lebe ich und spiele Gartic Phone.<br />
@@ -99,11 +97,22 @@
 
         
         <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
+          <div class="card project" data-sort="Komaki">
+            <img src="picture/komaki.jpg" class="card-img-top">
             <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
+              <h4>Komaki</h4>
+              <p>
+                Heyo !! <br/>
+                Ich bin Komaki und zeichne hauptsächlich Digital! <br> Mehr Infos zu mir findet ihr in portraits >w<<br/>
+                <br/>
+                My Socials :3<br/>
+                - Instagram: https://www.instagram.com/komaki.art/<br/>
+                - Twitter: https://twitter.com/KoMakiNishikino<br/>
+                - Twitch: https://www.twitch.tv/komakiart<br/>
+                - Youtube: https://www.youtube.com/channel/UC86cT19h8zXlET1SyhlAWWg<br/>
+                - Ko-Fi: https://ko-fi.com/komakiart<br/>
+              </p>
+              <img src="picture/komaki_img.jpg" class="card-img-top project-image"></img>
             </div>
           </div>
         </div>
@@ -111,281 +120,580 @@
 
         
         <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
+          <div class="card project" data-sort="Peachyfrogss">
+            <img src="picture/peachyfrogss.png" class="card-img-top">
             <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
+              <h4>Peachyfrogss</h4>
+              <p>hello<br />
+                Ich bin Peachy, oft auch als Apfel(mus) unterwegs.<br />
+                Momentan male ich nur digital, aber sobald ich mal Urlaub habe, will ich meine Aquarellfarben wieder mehr benutzen :D<br />
+                <br />
+                Am liebsten male ich girls, aber versuche mich auch an allem anderen.
+                Mein Traum ist es irgendwann mal Kinderbücher zu illustrieren, aber ist noch ein langer Weg.<br />
+                <br />
+                Anbei ein paar Links:<br />
+                Instagram: https://www.instagram.com/peachyfrogss/<br />
+                Twitter: https://twitter.com/peachy_frogss<br />
+                Twitch: https://www.twitch.tv/peachyfrogss<br />
+                <br />
+                Eines meiner Werke das ich mag:<br />
+              </p>
+              <img src="picture/peachyfrogss_img.png" class="card-img-top project-image"></img>
             </div>
           </div>
         </div>
         
+
+
         <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
+          <div class="card project" data-sort="Jilipp">
+            <img src="picture/Jilipp_08_2022.png" class="card-img-top">
             <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card project" data-sort="4">
-            <img src="picture/chikun_pic.png" class="card-img-top" alt="Chikun">
-            <div class="card-body project-info">
-              <h4 data-sort="Chikun">Chikun</h4>
-              <p></p>
+              <h4>Jilipp</h4>
+              <p>Hey^^, <br>
+                ich bin Jilipp, Visual Artist für einen Games-Publisher 🎨
+              </p>
+              <img src="picture/Jilipp_pic_08_2022.png" class="card-img-top project-image"></img>
             </div>
           </div>
         </div>
 
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Peeweearty">
+            <img src="picture/Peeweearty_08_2022.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Chikun</h4>
+              <p>Hello,<br />
+                du kannst mich Peewee nennen! ✨ <br />
+                Ich bin <b>“professionelle”</b> Doodlerin und Streamerin. <br />
+                Schaut gerne vorbei und lernt mich einfach besser kennen! 💖<br />
+                Beispiel Bilder:
+              </p>
+              <img src="picture/Peeweearty_pic_08_2022-scaled.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Melyanna77">
+            <img src="picture/melyanna777.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Melyanna77</h4>
+              <p>Halli Hallo :3<br />
+                <br />
+                Ich weiß nie, was ich in solchen Dingen alles schreiben soll, ohne dass es ein halber Roman wird, deswegen versuche ich, es kurz und knackig zu halten:<br />
+                <br />
+                Ich bin die Mely und zeichne schon mein ganzes Leben lang sehr gerne.
+                Seit 2020 zeichne ich etwas ernsthafter digital und lerne jeden Tag etwas Neues dazu.<br />
+                Hauptsächlich zeichne ich zur Zeit FanArts aus sämtlichen Medien und Pokémon mit neuer Typenverteilung nach dem Zufallsprinzip.<br />
+                <br />
+                Mein Traum ist es, eines Tages meinen eigenen Stil entwickeln zu können, um damit meine eigenen Geschichten zum Leben erwecken zu können.<br />
+                <br />
+                Schaut gerne mal vorbei:<br />
+                Twitch: https://www.twitch.tv/melyanna777<br />
+                Instagram: https://www.instagram.com/melyanna777<br />
+                Twitter: <br />
+                https://twitter.com/melyanna777<br />
+                
+                Hier ein FanArt von Haku, auf das ich sehr stolz bin :3
+              </p>
+              <img src="picture/melyanna777_img.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Josee">
+            <img src="picture/josee.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Josee</h4>
+              <p>Halluu🌼<br />
+                <br />
+                Ich heiße Joseé und zeichne schon mein ganzes Leben lang. Die letzten Jahre habe ich mich vorallem auf traditionelle Kunst konzentriert, momentan mache ich eher mehr digitale Kunst, vorallem für die Zukunft, da es mein Traum ist mein Hobby zum Beruf zu machen ^w^ Deshalb werde ich nach dem Abschluss meines Abiturs ein Studium im Bereich Illustration anstreben ^-^ <br />
+                <br />
+                Ich liebe es Tiere zu zeichnen vorallem im Traditionellen Bereich, würde aber auch wahnsinnig gerne eigene Landschaften kreieren und im digitalen Bereich besser werden - <br />
+                <br />
+                Falls ihr mal meine Kunst anschauen und mich vielleicht unterstützen wollt, hier meine Socials :<br />
+                <br />
+                Traditionell<br />
+                Instagram: https://instagram.com/josee_drawings<br />
+                <br />
+                Digital<br />
+                Instagram: https://instagram.com/joseenaemi<br />
+                <br />
+                Hier noch zwei Zeichnungen von mir, eins Traditionell, eins Digital, die mir ganz gut gefallen >-< <br />
+              </p>
+              <img src="picture/josee_img-scaled.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Kitsuna">
+            <img src="picture/kitsuna.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Kitsuna</h4>
+              <p>Hoii, ich bin Kitsuna aka. Aksi :3<br />
+                <br />
+                Ich bin leidenschaftliche Hobby-Zeichnerin. Ich bezeichne mich selbst immer als Schweizer-Taschenmesser. Kann von allem etwas, aber nichts so richtig gut UwU✨ <br />
+                Ich probiere gerne neue Dinge und kann mich somit auf nicht großartig festlegen. Bin noch auf der Suche, nach meinem eigenen Zeichenstil.🧡 <br />
+                <br />
+                Meine bisherigen Bilder habe ich sowohl auf Leinwand mit Acryl gemalt, als auch digital. Seit einem Jahr habe ich auch Aquarell für mich entdeckt.🌸 <br />
+                Am liebsten illustriere ich weibliche Charaktere (wesentlich mich selbst für Profilbilder) im Anime Stil mit kleiner Tendenz zu Lolis. Bin aber auch immer offen für neue Ideen. 🥰 <br />
+                Große Projekte bleiben leider immer auf der Strecke liegen, da ich doch recht Faul bin und keine Motivation für das vollenden aufbringen kann 🥲 <br />
+                <br />
+                Dann noch etwas Triviawissen über mich:<br />
+                <br />
+                -Ich bin ein Winzling mit 1,55m<br />
+                -Füchse sind meine Lieblingstiere<br />
+                -Ich habe extra für diese Vorstellung ein neues Bild erstellt<br />
+                -Mache manchmal auch NSFW Art >///< <br />
+                <br />
+                Insta:https://www.instagram.com/the_legend_of_aksi/<br /></p>
+              <img src="picture/kitsuna_img.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Raka">
+            <img src="picture/Raka.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Raka</h4>
+              <p>Hello~<br />
+                <br />
+                Raka ist der Name! Ich bin Informatikstudent und zeichne/male nebenbei gern hobbymäßig. Meine Kunsteinflüsse kommen eher vom westlichen/realistischen Stil, in stylisiertem Manga/Anime Stil brauch ich noch einiges an Training 😅 <br />
+                <br />
+                Könnt gerne meine socials anschaun:<br />
+                Insta: https://www.instagram.com/raka.pencil<br />
+                <br />
+                Ein DnD Character von mir, den ich ziemlich nett finde <br />
+              </p>
+              <img src="picture/Raka_img.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Haruto">
+            <img src="picture/haruto.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Haruto</h4>
+              <p>Ich mach das mal einheitlich hier rüber : D<br />
+                Hi, Ich bin Haru :veiWave: Auch bekannt als Harutobun, Bunny demon, …
+                21 & Streame auf Twitch Art+Gaming, meistens auf Englisch :nodders: 
+                <br />
+                Hauptsächlich beschäftige ich mich mit Art, Live2D (Rigging und Animation), Musik (Klavier) und alles was dazu gehört<br />
+                <br />
+                Einen Überblick über all meine socials und infos ist hier zu finden: <br />
+                https://harutobun.carrd.co/<br />
+                <br />
+                Direct Links:<br />
+                https://twitter.com/Harutobun<br />
+                https://www.twitch.tv/harutobun<br />
+                <br />
+                Bin derzeit viel an VTubern am schaffen also gehe sehr viel hin und her zwischen „sketchy“ und „painty“ wenns um meinen Artstil geht<br /></p>
+              <img src="picture/haruto_img.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="LiamReed">
+            <img src="picture/LiamReed.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>LiamReed</h4>
+              <p>Heyo, Ich bin Reed, Ich zeichne schon seit ich denken kann und male am meisten mit copics oder digital aber ich probiere auch gerne neue medien aus. <br />
+                <br />
+                Hier sind meine social medias: <br />
+                Instagram: https://www.instagram.com/li_reed_am/<br />
+                Artfol: https://www.artfol.me/reedshrine<br />
+                ocs Toyhouse: https://toyhou.se/Liamreed<br />
+                Die zeichnung war ein bild für eine Artfol challenge wo es darum ging einen oc in party costüm mit Maske zu stecken 😄<br /></p>
+              <img src="picture/LiamReed_img-scaled.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Weintraubee">
+            <img src="picture/weintraubee.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Weintraubee</h4>
+              <p>Hiya  (。-ω-)ﾉ<br />
+                Ich bin Bee! Ich zeichne schon seit Ewigkeiten, kann aber nicht sagen, dass ich immer gut drin war hehe..<br />
+                <br />
+                Ich zeichne am liebsten digital auf Clip Studio Paint, aber breite mich ab und zu auch auf andere Medien aus. Zum Beispiel Pixel Art, kurze Animationen, 3D Modelle und natürlich traditionell!<br />
+                Ich hoffe mal in der Gamebranche mit meinen Zeichnungen arbeiten zu können :D<br />
+                <br />
+                Hier könnt ihr mich finden:<br />
+                Instagram: https://www.instagram.com/weintraubee/<br />
+                Twitter: https://twitter.com/Weintraubeebee<br />
+                (zurzeit streame ich nicht mehr) Twitch: https://www.twitch.tv/weintraubee<br />
+                Art fight (falls das jemand von euch macht): https://artfight.net/~Weintraubee<br />
+                <br />
+                Hier sind zwei meiner Werke auf die ich recht stolz bin :]
+              </p>
+              <img src="picture/weintraubee_img.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Crazycrash">
+            <img src="picture/crazycrash.jpg" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Crazycrash</h4>
+              <p>Hello, mein Name ist Sara/crazycrash 💗<br />
+                Ich zeichne seit März 2021 digital (seit Juni mit Grafiktablet) und lerne aktuell viele neue Sachen dazu und verbessere mich so gut wie möglich 😌<br />
+                Trotz dass ich viel digital zeichne, Versuch auch ab und zu noch traditionell zu zeichnen.<br />
+                Auf meinem Main Acc findet ihr fertige Zeichnungen :3
+                https://www.instagram.com/crazycrash1.0/<br />
+                Auf meinem Doodle Acc hauptsächlich die Zeichnungen von den Gartic Phone Runden und andere Skizzen
+                https://www.instagram.com/crazycrash_doodles/<br />
+                Auf meinem Twitter Acc versuch ich auch hin und wieder Zeichnungen oder Skizzen hochzuladen 🤝🏻
+                https://twitter.com/crxzycrash/ <br />
+                Oben eine Art Summary aus dem Jahr 2021, eine traditionelle Zeichnung und ein Bild von mir (das sollte eig drunter qwq) 😌💗 <br />
+              </p>
+              <img src="picture/crazycrash_img-scaled.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Vedrfolnir">
+            <img src="picture/Vedrfolnir.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Vedrfolnir</h4>
+              <p>Hallo ihr Lieben.<br />
+                Ich heisse Melli und habe bis September 2021 nur traditionell gezeichnet. Ausprobiert habe ich mich an vielen Materialien und Techniken wie zb. Copic Markern, Polychromos, Aquarell, Kohle und Acrylfarben. Ich bin eine absolute Hobbykünstlerin und würde gerne mehr digital zeichnen, allerdings lässt die Zeit das nicht immer zu.
+                Bei Gartic Phone probiere ich ganz spontan diverse Stile aus, wie es mir gerade in den Sinn kommt. Das macht mir richtig viel Spaß.
+                Ich freue mich schon auf viele weitere Stunden mit euch in Gartic Phone. 🙂<br />
+                <br />
+                Deviantart: https://www.deviantart.com/wedrfolnir
+              </p>
+              <img src="picture/Vedrfolnir_img-scaled.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Maxxyi">
+            <img src="picture/maxxyi.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Maxxyi</h4>
+              <p>Halli Hallo<br />
+                <br />
+                Ich bin Maxxyi und versuche mich erst seit 5 Jahren am zeichnen und seit 3 Jahren am digitalen zeichnen.<br />
+                Hauptsächlich male ich Fanarts und gelegentlich was anderes.
+                Meine Zeichnungen lade ich, wenn ich es nicht vergesse, auf meinem Insta hoch.<br />
+                https://www.instagram.com/maxxyi18/
+              </p>
+              <img src="picture/maxxyi_img.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Teinili">
+            <img src="picture/teinili.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>Teinili</h4>
+              <p>Hi Ich bin Nils und hab 2019 nachdem ich mir ein Ipad geholt hab so richtig angefangen vieeeel zu zeichnen und poste seitdem eigentlich alles was ich male auf insta: https://www.instagram.com/teinili/ <br>
+                Unter anderem dieses Fanart von  @Peeweearty durch die ich hier gelandet bin 😌
+              </p>
+              <img src="picture/teinili_pic-scaled.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="MuriiArts">
+            <img src="picture/Murii_08_2022.png" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>MuriiArts</h4>
+              <p>Hello uwu <br />
+                wollte mal aktualisieren nachdem sich ja doch einiges geändert hat.
+                Ich poste meine Pieces auf Instagram
+                https://www.instagram.com/muriiarts<br />
+                Ansonsten streame ich auch hin und wieder auf Twitch<br />
+                https://www.twitch.tv/muriiarts<br /></p>
+              <img src="picture/Murii_pic_08_2022.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="SusiSill">
+            <img src="picture/susisill.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>SusiSill</h4>
+              <p>Hi<br />
+                <br />
+                Bin die Susi, 19, aus Österreich<br />
+                <br />
+                Ich zeichne schon seit kleinem auf schon, mit Stift und Papier, aber im November 2021 hab ich mir ein Zeichentablet geholt (XP-Pen Deco 03) und zeichne seitdem dicital.<br />
+                <br />
+                Wenn ihr wollt könnt ihr mir auf Insta folgen.<br />
+                Mein Hauptacc mit hauptsächlich Fotografiecontent: https://instagram.com/susanne000981<br />
+                <br />
+                Mein Kunstacc wo meine Zeichnungen von Gartic raufkommen oder auch wenn ich mal wieder was auf der Leinwand gezeichnet hab: https://instagram.com/susen_swan<br />
+                <br />
+                Hier im anschluss ein paar Bilder von mir:
+              </p>
+              <img src="picture/susisill_pic.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Higamino">
+            <img src="picture/higamino.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>Higamino</h4>
+              <p>Hallo,<br />
+                ich bin die Higamino 25 Jahre alt.<br />
+                Ich zeichne seitdem ich ungefähr 14 Jahre alt bin. Ich hatte 2014 ein Grafiktablett von wacom gehabt und damit meine ersten digitalen Bilder entstanden. Leider ist das nicht mehr da. <br />
+                Hab lange Traditionell gearbeitet und 2020 hab ich mein iPad und einen Apple pencel gekauft für meine Ausbildung.<br />
+                <br />
+                Falls ihr mir auf Instagram folgen wollt könnt ihr das gerne tun:
+                https://www.instagram.com/higamino<br />
+                <br />
+                Und falls ihr mir live zuschauen wollt wie Sachen zocke könnt ihr gerne bei Twitch vorbei schauen:<br />
+                https://www.twitch.tv/higamino 
+              </p>
+              <img src="picture/higamino_pic.webp" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Aikyo">
+            <img src="picture/aikyo.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>Aikyo</h4>
+              <p>Ein herzliches Hallo an alle 😊 <br />
+                <br />
+                Mein Name ist Laura, ich bin 34 Jahre alt und zeichne seit ich klein war. 2006 habe ich mit meinem ersten Grafiktablet angefangen digital zu zeichnen. Es ist aber alles eher Hobby, da ich es bisher nicht geschafft habe in einem kreativen Beruf Fuß zu fassen. <br />
+                <br />
+                Gerne könnt ihr mir auf Instagram folgen (wobei da erst einmal nur analoge Kunst zu sehen ist 😅 ). Digitales findet ihr dann auf deviantart und ein wenig Kuddelmuddel auf tumblr. Auf Twitch bin ich zwar auch vertreten, aber leider zu schüchtern zum Streamen 😖<br />
+                <br />
+                https://www.instagram.com/laura.furby/<br />
+                https://www.deviantart.com/furby0305<br />
+                https://laurafurby.tumblr.com/<br />
+                <br />
+                *Aikyo heiße ich auf Discord, weil das meistens mein Name in Online-Spielen ist 😅<br />
+              </p>
+              <img src="picture/aikyo_pic.webp" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Alessa">
+            <img src="picture/alessa.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>Alessa</h4>
+              <p>Endlich bin ich auch noch dazu gekommen mich vorzustellen 😉<br />
+                <br />
+                Hallo zusammen, Ich bin Alessa und habe seit kurzem ein Tablet (Juni 2022) mit dem ich momentan sehr viel digital zeichne. Davor habe ich selten traditionell was gemacht. Ich besuche zurzeit das Gymnasium mit dem Hauptfach Kunst. <br />
+                Ich zeichne gerne Tiere wie Katzen und Schmetterlinge, probiere mich ab und zu auch an menschlichen Wesen aus. <br />
+                <br />
+                Twitch: https://www.twitch.tv/alessaaa19<br />
+                <br />
+                Instagram: https://www.instagram.com/alessaaa19_/<br />
+              </p>
+              <img src="picture/alessa_pic.webp" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Theini">
+            <img src="picture/teinili.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>Theini</h4>
+              <p>Heyy!<br />
+                Ich bin Theini und zeichne am liebsten Cartoons mit expressiven Gesichtern oder neuerdings auch Architektur.<br />
+                Nachdem ich in den letzten Jahren eher sporadisch gezeichnet hatte, haben die Gartic Streams von Kasmu und Eistuete mitgeholfen, meine Liebe am Zeichnen wiederzuerwecken.<br /><br />   
+                Hier meine neuen Art-Socialmediakanäle:<br />
+                https://www.instagram.com/theini.arts/<br />
+                https://twitter.com/TheiniArts<br />
+              </p>
+              <img src="picture/teinili_pic-scaled.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="CrocutaRT">
+            <img src="picture/CrocutaRT.png" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>CrocutaRT</h4>
+              <p>Hey, ich bin Crocuta aka Crocu und ich studieren Kommunikation Design. Ich liebe es unterschiedliche Stile auszuprobieren. Hauptsächlich zeichne ich digital, manchmal aber auch mit Aquarell. Hier könnt ihr mich finden: <br />
+                https://www.instagram.com/crocuta.art/<br />
+                https://twitter.com/crocuta_art<br />
+              </p>
+              <img src="picture/CrocutaRT_pic-scaled.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Dimi">
+            <img src="picture/Dimi.png" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>Dimi</h4>
+              <p>Servus alle zusammen! <br />
+                Ich bin der Knuffi aka. Dimi, ich zeichne gerne bei Kasmudan in Gartic mit und das ist so ziemlich alles was ich mache! Man kann mich eigentlich in vielen Gartic-Lobbys treffen oder auch bei <br />https://www.twitch.tv/dimi_knuffi ! :3 <br />
+                <br />
+                Bilder aus Gartic:
+              </p>
+              <img src="picture/Dimi_pic.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Widu_07">
+            <img src="picture/widu_07.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>Widu_07</h4>
+              <p>Servus! <br />
+                Mein Name ist Wiebke, bin 15 Jahre alt und zeichne ungefähr seit 2 Jahren. Mal mehr mal weniger, kommt immer darauf an wie meine Motivation gerade steht und ob ich Zeit habe ^^<br />
+                Hauptsächlich zeichne ich Traditionell, da haben mich besonders die Alkoholmarker, Aquarell und Kohle in deren Bann eingesogt. <br />
+                Finden könnt ihr mich auf instagram:<br />
+                
+              </p>
+              <img src="picture/Widu_07_pic.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Gilderooy">
+            <img src="picture/gilderooy.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>Gilderooy</h4>
+              <p>Hey ^^ <br>
+                Ich bin Gilderooy, zeichne/ male seit ein paar Jahren hauptsächlich
+                digital in Clip Studio paint.<br>
+                Mit Animation habe ich allerdings auch ein wenig Erfahrung.<br>
+                <br>
+                Aktiv bin ich eigentlich nur auf Insta.
+              </p>
+              <img src="picture/Gilderooy_pic.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="RyuuDai">
+            <img src="picture/RyuuDai.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>RyuuDai</h4>
+              <p>Ich bin Ryuu'dai ich bin manchmal bisschen eigenartig aber recht lieb, glaub ich mal .... EGAAAAl <br>
+                Ich zeichne für mein leben gerne natürlich schon als Minitentakelelf, bewusster hab ich mit zeichnen begonnen mit dem Alter von ca 10 Jahren o-o<br>
+                Auch wenn ich unregelmäßig live bin (als PNG-Tuber) oder unregelmäßig Poste... <br>
+                <br>
+                Wo bin ich zu finden? --------------------<br>
+                [Twitter] https://twitter.com/Ryuu_Dai_Art<br>
+                [Insta] https://www.instagram.com/ryuu_dai_art<br>
+                [Twitch] https://www.twitch.tv/ryuu_dai<br>
+                <br>
+                Vllt paar weitere infos?------------------<br>
+                Ich bin sozial unbeholfen und schnell mal überfordert (soziale Batterie geht schnell leer)<br>
+                Kontakt mit andere Artist und Leute erfreut mich mega!<br>
+                Ich liebe abgöttisch Hunde, Wölfe, Katzen und Tentakel (nicht die  .. naja auch vllt)<br>
+                ich mag überhaupt nicht Spinnen, Zwiebel und tiefe dunkle Gewässer o-o <br>
+                <br>
+                klatscht paar Bilder aufn tisch  hier o-o<br>
+              </p>
+              <img src="picture/RyuuDai_pic.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Kira297">
+            <img src="picture/kira297.webp" class="card-img-top" >
+            <div class="card-body project-info">
+              <h4>Kira297</h4>
+              <p>Ich bin Kira (30) und zeichne so richtig aktiv ehrlich gesagt erst seit dem 19.10.2022. Bis dahin zeichnete ich nur für mich und habe nie wen an meinen Bildern teilhaben lassen. Zu finden bin ich noch auf keiner Plattform, da ich ein Mensch bin der viel Wert auf Meinung Andere legt. Um mir den Spaß am Zeichnen nicht kaputt zu machen, warte ich damit lieber noch😅</p>
+              <img src="picture/kira297_pic.webp" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card project" data-sort="Alisa">
+            <img src="picture/alisa_slytherin.webp" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Alisa Slytherin</h4>
+              <p>Haaay ehh ja wo fange ich an?<br>
+                Ich bin Alisa und 24 Jahre alt geworden. Als ich 11 Jahre alt war habe ich nach einem neuen Hobby gesucht und bin auf eine Kunstfabrik gestoßen, wo ich noch heute unregelmäßig hingehe. Dort hatte man jeglichen Stuff um sich künstlerisch auszuleben. Die Leiterin hatte mich immer sehr gemocht, weil meine Kunst von mir kommt und nicht Versuche etwas zu kopieren 🫠 <br/> 
+                Dies habe ich aber erst durch euch so richtig verstanden (mein altes Ego wollte auch können was andere können oder das was mein Bruder kann, der auch hier ist und mich auch erst hier her geholt hat). <br>
+                Aber so langsam werde ich immer Stolzer auf das was ich zeichne -auch wenn nicht immer alles gelingt und ich bin stolz mein Styl gefunden zu haben, wo Leute sagen können: Aach das ist von ihr <br>
+                Ja das musste ich Mal alles los werden 🫣
+              </p>
+              <img src="picture/alisa_slytherin_pic.jpg" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+
+
+        <!--
+        <div class="col-md-4">
+          <div class="card project" data-sort="Chikun">
+            <img src="picture/chikun_pic.png" class="card-img-top">
+            <div class="card-body project-info">
+              <h4>Chikun</h4>
+              <p>Test</p>
+              <img src="picture/chikun_img.png" class="card-img-top project-image"></img>
+            </div>
+          </div>
+        </div>
+        -->
 
 
 
 
 
       </div>
+      
+      <!--
       <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -400,7 +708,7 @@
           </div>
         </div>
       </div>
-
+      -->
       <!-- 
       <div class="row">
         <div class="col-lg-4 col-md-6">
@@ -411,5 +719,38 @@
 
   
     </div>
+    <footer>
+      <div id="footer-div">
+        <p>Version: 0.1 </p>
+      </div>
+
+    </footer>
   </body>
+
+  <script>
+    const searchInput = document.querySelector("#search-input");
+    const searchResults = document.querySelector("#search-results");
+
+    function searchByDataSort(searchTerm) {
+      const items = searchResults.querySelectorAll("[data-sort]");
+
+      items.forEach((item) => {
+        const dataSortValue = item.getAttribute("data-sort");
+        const textContent = item.textContent.toLowerCase();
+        const searchTermLower = searchTerm.toLowerCase();
+
+        if (dataSortValue.includes(searchTermLower) || textContent.includes(searchTermLower)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    searchInput.addEventListener("input", () => {
+      searchByDataSort(searchInput.value);
+    });
+  </script>
+
+
 </html> 
