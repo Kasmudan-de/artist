@@ -69,4 +69,16 @@ body {
     color: #ffffffad;
     text-align: right;
     padding: 10px 10px 10px 10px;
+
   }
+
+  #footer-div a {
+    color: #0060B6;
+    text-decoration: none;
+  }
+
+  #footer-div a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
