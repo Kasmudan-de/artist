@@ -12,6 +12,12 @@
     border-radius: 5%;
 }
 
+#protfolio {
+  background-color: #161616c9;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+
 #row {
     margin: 10 10 10 10;
 }
@@ -78,4 +84,9 @@
     color:#00A0C6; 
     text-decoration:none; 
     cursor:pointer;  
+}
+
+body {
+  background-image:url(/picture/Banner_2.png);
+  color: rgb(255, 255, 255);
 }
